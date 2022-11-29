@@ -17,15 +17,56 @@ h3{
   font-size: 1.5rem;
 }
 
-h4{
+ i{
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 15px 20px;
+  background: #454242;
+}
+
+a{
   font-family: 'Ubuntu',  sans-serif;
   text-align: center;
   color: white;
-  padding: 10px 50px;
+  margin: 15px 300px;
+  border: none;
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
+}
+.btn{
+  font-family: 'Ubuntu',  sans-serif;
+  text-align: center;
+  color: white;
+  padding: 15px 70px;
   background: rgb(24, 116, 116) ;
   box-shadow: #187474 10px 10px 10px -10px;
-  margin: 10px;
+  margin: 15px 300px;
+  border: none;
+  display: inline-flex;
+  cursor: pointer;
 }
+
+.btns{
+  font-family: 'Ubuntu',  sans-serif;
+  text-align: center;
+  color: white;
+  padding: 15px 70px;
+  background: rgb(62, 123, 123) ;
+  margin: 15px 300px;
+  border: none;
+  display: inline-flex;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btns:hover{
+  box-shadow: #187474 10px 15px 10px -10px;
+}
+
+
 
 .rifa{
   justify-content: center;
@@ -65,17 +106,23 @@ h4{
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  background-color: white;
+  background-color: rgba(0,0,0,0.7);
   border-radius: 10px;
   width: 50%;
+  overflow: hidden;
+  background-size: cover;
 }
 
+
 .modal label{
+  font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
   width: 100%;
+  color: white;
 }
 
 .modal input{
+  font-family: 'Ubuntu', sans-serif;
   width: 100%;
   outline: none;
   padding: 5px 10px;
@@ -83,6 +130,36 @@ h4{
   border-top: none;
   border-left: none;
   border-right: none;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+}
+
+.btnsalvar{
+  font-family: 'Ubuntu', sans-serif;
+  padding: 6px 10px;
+  background-color: #187474;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: .4s ease-in-out;
+}
+.btnsalvar:hover{
+  box-shadow: #187474 10px 15px 15px -10px;
+}
+
+.btnvoltar{
+  font-family: 'Ubuntu', sans-serif;
+  padding: 6px 10px;
+  background-color: #187474;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: .4s ease-in-out;
+}
+.btnvoltar:hover{
+  box-shadow: #187474 10px 15px 15px -10px;
 }
 
 .active{
