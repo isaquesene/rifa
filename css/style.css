@@ -194,4 +194,16 @@ a{
   .modal button{
     font-size: 12px !important;
   }
+  .btn{
+    font-size: 12px !important;
+  }
+  .btns{
+    font-size: 12px !important;
+  }
+  .btnsalvar{
+    font-size: 12px !important;
+  }
+  .btnvoltar{
+    font-size: 12px !important;
+  }
 }
