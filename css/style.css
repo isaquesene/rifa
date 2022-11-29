@@ -182,6 +182,23 @@ a{
 }
 
 @media(max-width: 500px){
+
+  .container{
+    width: 50% !important;
+  }
+
+  .rifa{
+    width: 50% !important;
+  }
+
+  i{
+    width: 50% !important;
+  }
+
+  a{
+    width: 50% !important;
+  }
+
   .modal{
     width: 50% !important;
   }
@@ -197,10 +214,10 @@ a{
   .btn{
     font-size: 12px !important;
   }
-  .btns{
+  .btnsalvar{
     font-size: 12px !important;
   }
-  .btnsalvar{
+  .btns{
     font-size: 12px !important;
   }
   .btnvoltar{
