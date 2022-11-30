@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
 
 body{
-  background: #222;
+  margin: 0;
+  background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-simple-paper-wind-christmas-carnival-red-background-material-picture-image_928106.jpg);
 }
 
 .container{
@@ -10,11 +11,16 @@ body{
   display: flex;
 }
 
+.rifa a{
+  text-decoration: none;
+}
+
 h3{
   font-family: 'Ubuntu',  sans-serif;
   text-align: center;
   color: white;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 
 h4{
@@ -23,50 +29,17 @@ h4{
   text-align: center;
   color: white;
   padding: 10px 50px;
-  background: rgb(24, 116, 116) ;
-  box-shadow: #187474 10px 10px 10px -10px;
+  background:  #cc0000 ;
+  box-shadow:  #cc0000 10px 10px 10px -10px;
   margin: 10px;
-  animation: label 6s linear infinite;
 }
+  
 
-@keyframes label {
-  0%{
-    background-color: white;
-  }
-  25%{
-    background-color: rgb(24, 116, 116);
-  }
-  50%{
-    background-color: #187474;
-  }
-  75%{
-    background-color: #187470;
-  }
-  100%{
-    background-color: white;
-  }
-}
-
-
-.numeros{
-  display: inline-flex;
-   align-items: center;
-   justify-content: center;
-   width: 45px;
-   height: 45px;
-   border-radius: 50%;
-   margin: 4px;
-   font-size: 30px;
-   font-weight: bold;
-   background-color: rgb(24, 116, 116);
-   cursor: pointer;
-   color: white;
-}
 
 .rifa{
   justify-content: center;
   flex-direction: column;
-  border:aqua 1px solid;
+  border: #cc0000 1px solid;
   margin: 30px;
 }
 .rifa li{
@@ -77,11 +50,12 @@ h4{
    height: 45px;
    border-radius: 50%;
    margin: 4px;
-   font-size: 30px;
+   font-size: 24px;
    font-weight: bold;
-   background-color: rgb(24, 116, 116);
+   background-color:#0F8A5F;
    cursor: pointer;
    color: white;
+   box-shadow: #000000 10px 15px 15px -15px;
 }
 
 .rifa .venda{
@@ -115,10 +89,10 @@ h4{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 30px 40px;
   background-color: white;
   border-radius: 10px;
-  width: 50%;
+  width: 60%;
 }
 
 .modal label{
@@ -150,6 +124,16 @@ h4{
 
 span{
   color: white;
+  font-size: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 3px auto;
+}
+
+p{
+  width: 50px;
+  color: white;
+  font-size: 10px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .modal label{
@@ -175,7 +159,7 @@ span{
 .btnsalvar{
   font-family: 'Ubuntu', sans-serif;
   padding: 6px 10px;
-  background-color: #187474;
+  background-color: #cc0000;
   border: none;
   border-radius: 4px;
   color: white;
@@ -183,13 +167,13 @@ span{
   transition: .4s ease-in-out;
 }
 .btnsalvar:hover{
-  box-shadow: #187474 10px 15px 15px -10px;
+  box-shadow: #cc0000 10px 15px 15px -10px;
 }
 
 .btnvoltar{
   font-family: 'Ubuntu', sans-serif;
   padding: 6px 10px;
-  background-color: #187474;
+  background-color: #cc0000;
   border: none;
   border-radius: 4px;
   color: white;
@@ -197,9 +181,47 @@ span{
   transition: .4s ease-in-out;
 }
 .btnvoltar:hover{
-  box-shadow: #187474 10px 15px 15px -10px;
+  box-shadow: #cc0000 10px 15px 15px -10px;
 }
 
+
+.card-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.card{
+  margin: 10px;
+  height: 80vh;
+  width: 100vw;
+  border-radius: 40px;
+  position: relative;
+  flex: 0.5;
+  color: #fff;
+  transition: .6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card h2{
+  position: absolute;
+  font-family: 'Ubuntu', sans-serif;
+  left: 10px;
+  color: #fff;
+  bottom: 10px;
+  opacity: 0;
+}
+
+.card.active{
+  flex: 5;
+  transition: .6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.card.active h2{
+  opacity: 1;
+}
 
 .active{
   display: flex;
@@ -217,6 +239,13 @@ span{
   to{
     opacity:1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 500px){
+  .card:nth-child(4n),
+  .card:nth-child(5n){
+    display: none;
   }
 }
 
