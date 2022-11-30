@@ -267,4 +267,10 @@ p{
   .modal button{
     font-size: 17px !important;
   }
+  span{
+    font-size: 17px !important;
+  }
+  p{
+    font-size: 15px !important;
+  }
 }
