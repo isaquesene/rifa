@@ -17,56 +17,51 @@ h3{
   font-size: 1.5rem;
 }
 
- i{
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 15px 20px;
-  background: #454242;
-}
-
-a{
+h4{
   font-family: 'Ubuntu',  sans-serif;
+  font-size: 20px;
   text-align: center;
   color: white;
-  margin: 15px 300px;
-  border: none;
-  display: inline-flex;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 13px;
-}
-.btn{
-  font-family: 'Ubuntu',  sans-serif;
-  text-align: center;
-  color: white;
-  padding: 15px 70px;
+  padding: 10px 50px;
   background: rgb(24, 116, 116) ;
   box-shadow: #187474 10px 10px 10px -10px;
-  margin: 15px 300px;
-  border: none;
+  margin: 10px;
+  animation: label 6s linear infinite;
+}
+
+@keyframes label {
+  0%{
+    background-color: white;
+  }
+  25%{
+    background-color: rgb(24, 116, 116);
+  }
+  50%{
+    background-color: #187474;
+  }
+  75%{
+    background-color: #187470;
+  }
+  100%{
+    background-color: white;
+  }
+}
+
+
+.numeros{
   display: inline-flex;
-  cursor: pointer;
+   align-items: center;
+   justify-content: center;
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   margin: 4px;
+   font-size: 30px;
+   font-weight: bold;
+   background-color: rgb(24, 116, 116);
+   cursor: pointer;
+   color: white;
 }
-
-.btns{
-  font-family: 'Ubuntu',  sans-serif;
-  text-align: center;
-  color: white;
-  padding: 15px 70px;
-  background: rgb(62, 123, 123) ;
-  margin: 15px 300px;
-  border: none;
-  display: inline-flex;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s ease-in-out;
-}
-
-.btns:hover{
-  box-shadow: #187474 10px 15px 10px -10px;
-}
-
-
 
 .rifa{
   justify-content: center;
@@ -89,6 +84,21 @@ a{
    color: white;
 }
 
+.rifa .venda{
+  display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   margin: 4px;
+   font-size: 30px;
+   font-weight: bold;
+   background-color: red;
+   cursor: pointer;
+   color: white;
+}
+
 .modal-container{
   width: 60vh;
   height: 50vh;
@@ -106,6 +116,31 @@ a{
   flex-direction: column;
   align-items: center;
   padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.modal label{
+  font-size: 14px;
+  width: 100%;
+}
+
+.modal input{
+  width: 100%;
+  outline: none;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
   background-color: rgba(0,0,0,0.7);
   border-radius: 10px;
   width: 50%;
@@ -113,6 +148,9 @@ a{
   background-size: cover;
 }
 
+span{
+  color: white;
+}
 
 .modal label{
   font-family: 'Ubuntu', sans-serif;
@@ -162,6 +200,7 @@ a{
   box-shadow: #187474 10px 15px 15px -10px;
 }
 
+
 .active{
   display: flex;
 }
@@ -182,13 +221,8 @@ a{
 }
 
 @media(max-width: 500px){
-
-  .container{
-    width: 50% !important;
-  }
-
   .modal{
-    width: 50% !important;
+    width: 30%;
   }
   .modal label {
     font-size: 12px !important;
@@ -197,18 +231,6 @@ a{
     font-size: 12px !important;
   }
   .modal button{
-    font-size: 12px !important;
-  }
-  .btn{
-    font-size: 12px !important;
-  }
-  .btnsalvar{
-    font-size: 12px !important;
-  }
-  .btns{
-    font-size: 12px !important;
-  }
-  .btnvoltar{
     font-size: 12px !important;
   }
 }
