@@ -10,7 +10,7 @@ body{
   display: flex;
 }
 
-.rifa a{
+a{
   text-decoration: none;
 }
 
@@ -63,19 +63,8 @@ img{
    box-shadow: #000000 10px 15px 15px -15px;
 }
 
-.rifa .venda{
-  display: inline-flex;
-   align-items: center;
-   justify-content: center;
-   width: 45px;
-   height: 45px;
-   border-radius: 50%;
-   margin: 4px;
-   font-size: 30px;
-   font-weight: bold;
-   background-color: red;
-   cursor: pointer;
-   color: white;
+.vendidas{
+  background-color: red !important;
 }
 
 .modal-container{
@@ -88,31 +77,6 @@ img{
   z-index: 999;
   align-items: center;
   justify-content: center;
-}
-
-.modal{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 40px;
-  background-color: white;
-  border-radius: 10px;
-  width: 60%;
-}
-
-.modal label{
-  font-size: 14px;
-  width: 100%;
-}
-
-.modal input{
-  width: 100%;
-  outline: none;
-  padding: 5px 10px;
-  margin-bottom: 20px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
 }
 
 .modal{
@@ -228,6 +192,7 @@ p{
   opacity: 1;
 }
 
+
 .active{
   display: flex;
 }
@@ -274,3 +239,4 @@ p{
     font-size: 15px !important;
   }
 }
+

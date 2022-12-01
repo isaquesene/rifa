@@ -3,11 +3,20 @@ const nome = document.querySelector('#nome')
 const num = document.querySelector('#num')
 const numeros = document.querySelector('.numeros');
 
-for (var i = 1; i < 101; i++) {
-  numeros.innerHTML += `<li onclick="openModal(${i})">${i}</li>`;
-}
+//array
+vendido = [29,21, 100]
 
-//array(id)
+
+for (var i = 1; i < 101; i++) {
+
+  if(vendido.includes(i)){
+    numeros.innerHTML += `<li class="vendidas">${i}</li>`;
+  }else{
+    numeros.innerHTML += `<li onclick="openModal(${i})">${i}</li>`;
+  }
+
+  
+}
 
 function editItem(index){
   openModal(true, index)
