@@ -43,7 +43,7 @@ function msg(){
 
 
 var url = "https://wa.me/5512982725408?text=" + "Nome: " + Nome + "%0a"
-+ "Numero: " + num + "%0a" + "Numeros" + nums;
++ "Numero: " + num + "%0a" + "Mais: " + nums;
 
 
 window.open(url, '_blank').focus();
