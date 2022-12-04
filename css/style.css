@@ -16,11 +16,10 @@ a{
 
 h3{
   font-family: 'Ubuntu',  sans-serif;
+  font-size: 14px;
   text-align: center;
   color: white;
-  font-size: 1.5rem;
-  text-decoration: none;
-  border: black;
+  margin: 10px;
 }
 
 h4{
