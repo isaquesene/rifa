@@ -4,7 +4,7 @@ const num = document.querySelector('#num')
 const numeros = document.querySelector('.numeros');
 
 //array
-vendido = [29,21, 100]
+vendido = []
 
 
 for (var i = 1; i < 101; i++) {
