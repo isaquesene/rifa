@@ -67,15 +67,17 @@ img{
 }
 
 .modal-container{
-  width: 60vh;
-  height: 50vh;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   display: none;
-  z-index: 999;
-  align-items: center;
+  z-index: 1000;
+  align-items: flex-start;
   justify-content: center;
+  transition: opacity 0.4s ease-in-out;
+  margin: 2em 0;
 }
 
 .modal{
