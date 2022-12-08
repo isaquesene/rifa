@@ -11,7 +11,7 @@ vendido = [17,22,33,13,46,100,12,7,9,10,74,31,34,48,39,11,15,6,80,84,27, 21, 41,
 for (var i = 1; i < 101; i++) {
 
   if(vendido.includes(i)){
-    numeros.innerHTML += `<li class="vendidas" onclick="numescolhido()>${i}</li>`;
+    numeros.innerHTML += `<li class="vendidas" onclick="numescolhido()">${i}</li>`;
   }else{
     numeros.innerHTML += `<li onclick="openModal(${i})">${i}</li>`;
   }
