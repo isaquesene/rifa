@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
 
 body{
-  background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-simple-paper-wind-christmas-carnival-red-background-material-picture-image_928106.jpg);
+  /*background-image: url(https://www.lucelia.sp.gov.br/admin/globalarq/noticia/noticia/651_366/03c43d34144b8c09efcdc6932a1b1fa9.jpeg);*/
+  /*background-color: #191919;*/
+  background: url(../image/RIFA.png) no-repeat;
+  opacity: 6;
+
 }
 
 .container{
@@ -28,8 +32,8 @@ h4{
   text-align: center;
   color: white;
   padding: 10px 50px;
-  background:  #cc0000 ;
-  box-shadow:  #cc0000 10px 10px 10px -10px;
+  background:  #cdb07d ;
+  box-shadow:  #cdb07d 10px 10px 10px -10px;
   margin: 10px;
 }
 
@@ -43,7 +47,7 @@ img{
 .rifa{
   justify-content: center;
   flex-direction: column;
-  border: #cc0000 1px solid;
+  border: #cdb07d 1px solid;
   margin: 30px;
 }
 .rifa li{
@@ -129,7 +133,7 @@ p{
 .btnsalvar{
   font-family: 'Ubuntu', sans-serif;
   padding: 6px 10px;
-  background-color: #cc0000;
+  background-color: #cdb07d;
   border: none;
   border-radius: 4px;
   color: white;
@@ -137,13 +141,13 @@ p{
   transition: .4s ease-in-out;
 }
 .btnsalvar:hover{
-  box-shadow: #cc0000 10px 15px 15px -10px;
+  box-shadow: #cdb07d 10px 15px 15px -10px;
 }
 
 .btnvoltar{
   font-family: 'Ubuntu', sans-serif;
   padding: 6px 10px;
-  background-color: #cc0000;
+  background-color: #cdb07d;
   border: none;
   border-radius: 4px;
   color: white;
@@ -151,7 +155,7 @@ p{
   transition: .4s ease-in-out;
 }
 .btnvoltar:hover{
-  box-shadow: #cc0000 10px 15px 15px -10px;
+  box-shadow: #cdb07d 10px 15px 15px -10px;
 }
 
 
