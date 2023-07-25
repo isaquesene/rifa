@@ -5,10 +5,10 @@ const nums = document.querySelector('#nums')
 const numeros = document.querySelector('.numeros');
 
 //array
-vendido = [22,33,13,46,100,12,7,9,10,74,31,34,48,39,11,15,6,80,84,27, 21, 41, 8,67, 19, 26,1, 24, 5, 89, 96, 83, 20, 25, 28, 30, 18, 63, 36, 14, 53, 38, 77]
+vendido = []
 
 
-for (var i = 1; i < 101; i++) {
+for (var i = 1; i < 151; i++) {
 
   if(vendido.includes(i)){
     numeros.innerHTML += `<li class="vendidas" onclick="numescolhido()">${i}</li>`;
